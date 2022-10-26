@@ -7,7 +7,8 @@ public class SeriesInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long seriesId;
+    private int seriesId;
+
 
 
     @Column(name="`year`")
@@ -17,11 +18,12 @@ public class SeriesInfo {
     @Column(name="`availability`")
     private String availability;
 
+
     public long getSeriesId() {
         return seriesId;
     }
 
-    public void setSeriesId(long seriesId) {
+    public void setSeriesId(int seriesId) {
         this.seriesId = seriesId;
     }
 

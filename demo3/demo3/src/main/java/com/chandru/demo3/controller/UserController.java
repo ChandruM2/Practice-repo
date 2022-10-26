@@ -30,6 +30,11 @@ public class UserController {
 
     }
 
+    @GetMapping("/{id}")
+    public Optional<UsersInfo> getUser(@PathVariable Integer id)
+    {
+        return ser.find(id);
+    }
 
 
 

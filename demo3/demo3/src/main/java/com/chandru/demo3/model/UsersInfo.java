@@ -7,7 +7,7 @@ public class UsersInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private  long userid;
+    private  Integer userid;
 
     private String userName;
     private String firstName;
@@ -26,7 +26,13 @@ public class UsersInfo {
         this.userName = userName;
     }
 
+    public Integer getUserid() {
+        return userid;
+    }
 
+    public void setUserid(Integer userid) {
+        this.userid = userid;
+    }
 
     public String getFirstName ()
     {

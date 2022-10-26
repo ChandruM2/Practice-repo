@@ -24,4 +24,9 @@ public class UserService {
         return "User registered successfully!";
     }
 
+    public Optional<UsersInfo> find(Integer id) {
+
+        return repo.findById(id);
+    }
+
 }

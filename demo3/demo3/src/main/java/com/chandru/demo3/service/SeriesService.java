@@ -2,6 +2,7 @@ package com.chandru.demo3.service;
 
 
 import com.chandru.demo3.model.SeriesInfo;
+import com.chandru.demo3.model.UsersInfo;
 import com.chandru.demo3.repository.SeriesRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,10 +28,8 @@ public class SeriesService {
         return "series added ";
 
     }
+    public Optional<SeriesInfo> findseries(Integer id) {
 
-
-    public Optional<SeriesInfo> find(long seriesid) {
-
-        return repo.findById(seriesid);
+        return repo.findById(id);
     }
 }
